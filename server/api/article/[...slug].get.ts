@@ -1,4 +1,4 @@
-import { JSDOM } from 'jsdom'
+import { parseHTML } from 'linkedom'
 // @ts-ignore
 import TurndownService from 'turndown/lib/turndown.browser.es'
 
@@ -20,7 +20,7 @@ export default eventHandler(async (event) => {
     baseURL: 'https://gunsweek.com',
     mode: 'no-cors',
     parseResponse: (html) => {
-      const { document } = (new JSDOM(html)).window
+      const { document } = parseHTML(html)
       return document.getElementById('printArea')
     },
   })

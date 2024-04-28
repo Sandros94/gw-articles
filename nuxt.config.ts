@@ -4,7 +4,7 @@ import twTypo from '@tailwindcss/typography'
 export default defineNuxtConfig({
   nitro: {
     rollupConfig: {
-      external: ['canvas', 'jsdom'],
+      external: ['canvas'],
     },
   },
   devtools: { enabled: true },
