@@ -1,7 +1,12 @@
 {
-  "name": "nuxt-app",
+  "name": "gw-articles",
   "type": "module",
-  "private": true,
+  "private": false,
+  "repository": "https://github.com/sandros94/gw-articles",
+  "author": {
+    "name": "Sandro Circi",
+    "email": "sandro.circi@digitoolmedia.com"
+  },
   "scripts": {
     "build": "nuxt build",
     "clear": "nuxt cleanup",
