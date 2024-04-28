@@ -1,39 +1,13 @@
-# Nuxt UI Minimal Starter
+# gw-articles
 
-Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
+A small app to test a number of functionalities and structures. It fetches the main content of any articles available on [GUNSweek.com](https://gunsweek.com), parses it to markdown and then renders it on the client page.
 
-## Setup
+Deployed on Cloudflare Pages via [Nuxt Hub](https://hub.nuxt.com).
 
-Make sure to install the dependencies:
-
-```bash
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# pnpm
-pnpm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# pnpm
-pnpm run build
-```
-
-Locally preview production build:
-
-```bash
-# pnpm
-pnpm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### Features
+- [x] dynamic pages
+- [x] fetch page content server side
+- [x] parse page content to markdown
+- [ ] cache markdown content in KV
+- [x] render markdown to client page
+- [ ] share cached links in homepage

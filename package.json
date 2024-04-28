@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "postinstall": "nuxt prepare",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "release": "nr lint && changelogen --release --push"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.204",
@@ -24,6 +25,7 @@
     "@types/node": "^20.12.7",
     "@types/turndown": "^5.0.4",
     "@vueuse/nuxt": "^10.9.0",
+    "changelogen": "^0.5.5",
     "nuxt": "^3.11.2",
     "turndown": "^7.1.3",
     "typescript": "5.4.5",
