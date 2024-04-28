@@ -1,5 +1,6 @@
 {
   "name": "gw-articles",
+  "version": "0.0.1",
   "type": "module",
   "private": false,
   "repository": "https://github.com/sandros94/gw-articles",
