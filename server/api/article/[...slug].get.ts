@@ -18,7 +18,6 @@ export default eventHandler(async (event) => {
 
   const article = await $fetch<string>(slug, {
     baseURL: 'https://gunsweek.com',
-    mode: 'no-cors',
     parseResponse: (html) => {
       const { document } = parseHTML(html)
       return document.getElementById('printArea')
