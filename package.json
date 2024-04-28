@@ -17,7 +17,7 @@
     "lint:fix": "eslint . --fix",
     "postinstall": "nuxt prepare",
     "preview": "nuxt preview",
-    "release": "nr lint && changelogen --release --push"
+    "release": "nr lint:fix && nr build && changelogen --release --push"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.204",
