@@ -23,10 +23,6 @@ export default defineNuxtConfig({
       stylistic: true,
     },
   },
-  hub: {
-    kv: true,
-    cache: true,
-  },
   tailwindcss: {
     config: {
       content: [],

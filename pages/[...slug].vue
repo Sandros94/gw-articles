@@ -1,7 +1,15 @@
 <template>
   <USkeleton v-if="pending" />
   <div v-else>
-    <MDC v-if="article && !error" :value="article" class="max-w-4xl px-2 mt-12 mx-auto prose dark:prose-invert" />
+    <div v-if="article && !error" class="max-w-4xl px-2 mt-12 mx-auto prose dark:prose-invert">
+      <p>
+        Original article:
+        <ULink :to="joinURL('https://gunsweek.com', ...slug)" target="_blank" class="underline" rel="noopener noreferrer">
+          {{ joinURL('https://gunsweek.com', ...slug) }}
+        </ULink>
+      </p>
+      <MDC :value="article" />
+    </div>
     <UAlert
       v-else
       :actions="[{ variant: 'solid', color: 'primary', label: 'Homepage', to: '/' }]"

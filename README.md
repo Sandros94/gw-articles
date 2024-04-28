@@ -8,6 +8,11 @@ Deployed on Cloudflare Pages via [Nuxt Hub](https://hub.nuxt.com).
 - [x] dynamic pages
 - [x] fetch page content server side
 - [x] parse page content to markdown
-- [ ] cache markdown content in KV
 - [x] render markdown to client page
-- [ ] share cached links in homepage
+
+### Disclaimer
+
+I work with the GUNSweek team, its development and foundation.
+The source code of this project is to both prove a point on the fact that whoever is interested in scraping the web could easily do it regardless of any configurations, as well as pointing out a number of enhancement to the GW project itself (discussed privately).
+
+Any content rendered falls under the [GUNSweek's legal notice](https://gunsweek.com/en/about-us)
