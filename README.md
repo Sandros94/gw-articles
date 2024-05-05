@@ -1,3 +1,7 @@
+# Archivied Project
+
+This project reached its purpose and thus archived.
+
 # gw-articles
 
 A small app to test a number of functionalities and structures. It fetches the main content of any articles available on [GUNSweek.com](https://gunsweek.com), parses it to markdown and then renders it on the client page.
